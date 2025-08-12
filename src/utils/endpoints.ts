@@ -1,0 +1,1 @@
+export const POPULAR_SUBJECT = '/test/popular-subject-area'
