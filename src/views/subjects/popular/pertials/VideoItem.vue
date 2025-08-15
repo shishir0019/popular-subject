@@ -52,6 +52,7 @@ const playVideo = () => {
     >
       <button
         class="btn btn-ghost !text-red-500 p-4 group-hover:scale-125 transition duration-300"
+        aria-label="play"
         @click="playVideo"
       >
         <svg

@@ -65,19 +65,19 @@ const navItems = [
         >
       </div>
       <div class="space-x-2 flex items-center">
-        <a href="#" class="hover:text-secondary transition duration-300"
+        <a href="#" aria-label="facebook" class="hover:text-secondary transition duration-300"
           ><icon icon="mdi:facebook" class="w-4 h-4 inline-block"
         /></a>
-        <a href="#" class="hover:text-secondary transition duration-300"
+        <a href="#" aria-label="instagram" class="hover:text-secondary transition duration-300"
           ><icon icon="mdi:instagram" class="w-4 h-4 inline-block"
         /></a>
-        <a href="#" class="hover:text-secondary transition duration-300"
+        <a href="#" aria-label="linkedin" class="hover:text-secondary transition duration-300"
           ><icon icon="mdi:linkedin" class="w-4 h-4 inline-block"
         /></a>
-        <a href="#" class="hover:text-secondary transition duration-300"
+        <a href="#" aria-label="youtube" class="hover:text-secondary transition duration-300"
           ><icon icon="mdi:youtube" class="w-4 h-4 inline-block"
         /></a>
-        <a href="#" class="hover:text-secondary transition duration-300"
+        <a href="#" aria-label="twitter" class="hover:text-secondary transition duration-300"
           ><icon icon="mdi:twitter" class="w-4 h-4 inline-block"
         /></a>
         <a

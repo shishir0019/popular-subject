@@ -111,19 +111,19 @@ const branches = [
         <img :src="footerBelow" alt="Education Hub Logo" class="absolute inset-0" />
         <div class="absolute right-0 top-0 bottom-0 flex items-center justify-center p-8">
             <div class="flex items-center gap-3 mt-4 md:mt-0">
-              <a href="#" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
+              <a href="#" aria-label="facebook" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
                 <icon icon="mdi:facebook" class="w-4 h-4 inline-block" />
               </a>
-              <a href="#" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
+              <a href="#" aria-label="instagram" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
                 <icon icon="mdi:instagram" class="w-4 h-4 inline-block" />
               </a>
-              <a href="#" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
+              <a href="#" aria-label="linkedin" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
                <icon icon="mdi:linkedin" class="w-4 h-4 inline-block" /> 
               </a>
-              <a href="#" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
+              <a href="#" aria-label="youtube" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
                 <icon icon="mdi:youtube" class="w-4 h-4 inline-block" />
               </a>
-              <a href="#" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
+              <a href="#" aria-label="twitter" class="bg-primary w-8 h-8 rounded-full border flex items-center justify-center hover:bg-secondary transition duration-300">
                 <icon icon="mdi:twitter" class="w-4 h-4 inline-block" />
               </a>
             </div>

@@ -22,6 +22,7 @@
               <div class="flex items-center space-x-3">
                 <button
                   class="bg-gray-100 text-red-500 rounded-full p-4 hover:bg-gray-300 cursor-pointer transition"
+                  aria-label="play"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +42,7 @@
               <input
                 type="text"
                 placeholder="Enter Full name"
+                aria-label="Enter Full name"
                 class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               />
       
@@ -51,19 +53,21 @@
                   >
                   <input
                     type="text"
+                    aria-label="Enter Mobile No."
                     placeholder="Enter Mobile No."
                     class="w-full border border-gray-300 rounded-r px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                   />
                 </div>
                 <input
                   type="email"
+                  aria-label="Enter Email"
                   placeholder="Enter Email"
                   class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 />
               </div>
       
               <div class="grid grid-cols-2 gap-4">
-                <select
+                <select aria-label="Preferred study destination"
                   class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 >
                   <option>Preferred study destination</option>
@@ -80,13 +84,13 @@
               </div>
       
               <input
-                type="text"
+                type="text" aria-label="Last Educational Institution"
                 placeholder="Last Educational Institution"
                 class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               />
       
               <div class="grid grid-cols-2 gap-4">
-                <select
+                <select aria-label="Choose Test"
                   class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 >
                   <option>Choose Test</option>
@@ -94,25 +98,26 @@
                   <option>TOEFL</option>
                 </select>
                 <input
-                  type="text"
+                  type="text" aria-label="Score"
                   placeholder="Score"
                   class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 />
               </div>
       
               <textarea
-                placeholder="Note"
+                placeholder="Note" aria-label="Note"
                 class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               ></textarea>
       
               <p class="text-xs text-gray-500">
                 By submitting this form, you agree to our
-                <a href="#" class="text-lime-500">Privacy Policy</a> and
-                <a href="#" class="text-lime-500">Terms & Conditions</a>.
+                <a href="#" aria-label="privacy policy" class="text-lime-500">Privacy Policy</a> and
+                <a href="#" aria-label="terms & conditions" class="text-lime-500">Terms & Conditions</a>.
               </p>
       
               <button
                 class="btn btn-primary"
+                aria-label="submit"
               >
                 SUBMIT
               </button>
