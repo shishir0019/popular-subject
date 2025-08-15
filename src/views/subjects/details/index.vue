@@ -57,17 +57,23 @@ onMounted(() => {
             Choose Your Desired Course From Our Wide Range Of Courses
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+        <div>
           <template v-if="top_courses.length">
-            <CourseGridView
-              v-for="course in top_courses"
-              :key="course.id"
-              :course="course"
-            />
-            <a href="#" class="btn btn-primary">
-              EXPLORE MORE
-              <Icon icon="mdi:arrow-right" class="w-4 h-4 inline-block" />
-            </a>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4"
+            >
+              <CourseGridView
+                v-for="course in top_courses"
+                :key="course.id"
+                :course="course"
+              />
+            </div>
+            <div class="flex justify-center items-center my-16">
+              <a href="#" class="btn btn-primary">
+                EXPLORE MORE
+                <Icon icon="mdi:arrow-right" class="w-4 h-4 inline-block" />
+              </a>
+            </div>
           </template>
           <template v-else>
             <div class="flex flex-col items-center col-span-4">
@@ -90,7 +96,6 @@ onMounted(() => {
           </template>
         </div>
       </div>
-      <div class="flex justify-center items-center my-16"></div>
     </div>
     <Form></Form>
   </div>
