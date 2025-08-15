@@ -5,21 +5,28 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    redirect: "/popular-subjects",
+    redirect: "/subjects/popular",
   },
   {
-    path: "/popular-subjects",
-    name: "popular-subjects",
+    path: "/subjects",
     component: DefaultLayout,
     children: [
       {
-        path: "",
+        path: "popular",
         name: "popular-subjects.index",
-        component: () => import("../views/populer-subjects/index.vue"),
+        component: () => import("../views/subjects/popular/index.vue"),
         meta: {
-          title: "Populer Subjects",
+          title: "Popular Subjects",
         },
-      }
+      },
+      {
+        path: ":subject_id/detail",
+        name: "subject-details.index",
+        component: () => import("../views/subjects/details/index.vue"),
+        meta: {
+          title: "Details",
+        },
+      },
     ],
   }
 ];

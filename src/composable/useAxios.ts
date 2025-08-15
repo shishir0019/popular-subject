@@ -7,6 +7,7 @@ const axiosInstance: AxiosInstance = axios.create({
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
+    'x-api-key': 'SHHuEwWewiQ9w5QT'
   },
 })
 
@@ -14,7 +15,7 @@ export function useAxios<T = any>() {
   const error = ref<AxiosError | null>(null)
   const loading = ref<boolean>(false)
 
-  const get = async (url: string, config?: AxiosRequestConfig) => {
+  const get = async <T>(url: string, config?: AxiosRequestConfig) => {
     loading.value = true
     error.value = null
     try {

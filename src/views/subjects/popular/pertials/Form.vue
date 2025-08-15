@@ -4,10 +4,10 @@
           class="relative bg-cover bg-center"
           style="background-image: url('your-background.jpg')"
         >
-          <div class="absolute inset-0 bg-[#02143b]/80 bg-opacity-70"></div>
+          <div class="absolute inset-0 bg-gray-800/80 bg-opacity-70"></div>
       
           <div
-            class="relative max-w-[1320px] mx-auto px-4 py-16 flex gap-10"
+            class="relative container px-4 py-16 flex gap-10"
           >
             <!-- Left: Video + Text -->
             <div class="flex flex-col justify-center text-white space-y-4 max-w-[500px]">
@@ -21,11 +21,11 @@
       
               <div class="flex items-center space-x-3">
                 <button
-                  class="bg-lime-500 rounded-full p-4 hover:bg-lime-600 transition"
+                  class="bg-gray-100 text-red-500 rounded-full p-4 hover:bg-gray-300 cursor-pointer transition"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 text-white"
+                    class="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -37,41 +37,41 @@
             </div>
       
             <!-- Right: Form -->
-            <div class="bg-white rounded-lg shadow-lg p-12 space-y-4 flex-1">
+            <div class="bg-white shadow-lg py-16 px-12 space-y-4 flex-1">
               <input
                 type="text"
                 placeholder="Enter Full name"
-                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               />
       
               <div class="grid grid-cols-2 gap-4">
                 <div class="flex">
-                  <span class="bg-gray-100 border border-gray-300 rounded-l px-3 py-2"
+                  <span class="bg-gray-100 border border-gray-300 rounded-l px-4 py-3"
                     >+44</span
                   >
                   <input
                     type="text"
                     placeholder="Enter Mobile No."
-                    class="w-full border border-gray-300 rounded-r px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                    class="w-full border border-gray-300 rounded-r px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder="Enter Email"
-                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                  class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 />
               </div>
       
               <div class="grid grid-cols-2 gap-4">
                 <select
-                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                  class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 >
                   <option>Preferred study destination</option>
                   <option>United Kingdom</option>
                   <option>United States</option>
                 </select>
                 <select
-                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                  class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 >
                   <option>Desired study level</option>
                   <option>Postgraduate</option>
@@ -82,12 +82,12 @@
               <input
                 type="text"
                 placeholder="Last Educational Institution"
-                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               />
       
               <div class="grid grid-cols-2 gap-4">
                 <select
-                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                  class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 >
                   <option>Choose Test</option>
                   <option>IELTS</option>
@@ -96,13 +96,13 @@
                 <input
                   type="text"
                   placeholder="Score"
-                  class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                  class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
                 />
               </div>
       
               <textarea
                 placeholder="Note"
-                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:ring-lime-400"
+                class="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring focus:ring-primary"
               ></textarea>
       
               <p class="text-xs text-gray-500">
@@ -112,7 +112,7 @@
               </p>
       
               <button
-                class="bg-primary text-white text-sm px-6 py-3 rounded-full font-semibold hover:bg-secondary transition duration-300 cursor-pointer"
+                class="btn btn-primary"
               >
                 SUBMIT
               </button>
@@ -127,16 +127,16 @@
           </h3>
           <div class="flex flex-wrap justify-center gap-6">
               <ul class="flex flex-wrap justify-center gap-6">
-                  <li class="hover:border-primary rounded px-12 py-4 bg-white border border-gray-100 cursor-pointer">
+                  <li class="px-12 py-4 bg-gray-100 hover:bg-gray-200 transition duration-300 border border-gray-200 shadow cursor-pointer">
                       <img src="https://www.ehlweb.theskyroute.com/assets/front/img/partners/6726087f49c54.png" class="h-28" alt="Award 1" />
                   </li>
-                  <li class="hover:border-primary rounded px-12 py-4 bg-white border border-gray-100 cursor-pointer">
+                  <li class="px-12 py-4 bg-gray-100 hover:bg-gray-200 transition duration-300 border border-gray-200 shadow cursor-pointer">
                       <img src="https://www.ehlweb.theskyroute.com/assets/front/img/partners/6726088b50e5f.png" class="h-28" alt="Award 2" />
                   </li>
-                  <li class="hover:border-primary rounded px-12 py-4 bg-white border border-gray-100 cursor-pointer">
+                  <li class="px-12 py-4 bg-gray-100 hover:bg-gray-200 transition duration-300 border border-gray-200 shadow cursor-pointer">
                       <img src="https://www.ehlweb.theskyroute.com/assets/front/img/partners/67260898890bc.png" class="h-28" alt="Award 3" />
                   </li>
-                  <li class="hover:border-primary rounded px-12 py-4 bg-white border border-gray-100 cursor-pointer">
+                  <li class="px-12 py-4 bg-gray-100 hover:bg-gray-200 transition duration-300 border border-gray-200 shadow cursor-pointer">
                       <img src="https://www.ehlweb.theskyroute.com/assets/front/img/partners/672608a6c1172.png" class="h-28" alt="Award 4" />
                   </li>
               </ul>

@@ -1,15 +1,15 @@
 import { ref } from "vue";
 import { useAxios } from "./useAxios";
 
-import { POPULAR_SUBJECT } from "../utils/endpoints";
-import type { IPaginatedUniversityResponse, ISubject } from "../types/subject";
+import { TOP_UNIVERSITIES } from "../utils/endpoints";
+import type { IPaginatedUniversityResponse, IUniversity } from "../types/subject";
 
-export function usePopularSubject() {
+export function useUniversities() {
     const { get } = useAxios();
 
-    const loading = ref<boolean | string>(false);
+    const loading = ref<boolean | string>(true);
     const errors = ref<any>({});
-    const data = ref<ISubject[]>([]);
+    const data = ref<IUniversity[]>([]);
 
 
     const params = ref<{ page: number; per_page: number; total?: number; last_page?: number }>({
@@ -17,11 +17,11 @@ export function usePopularSubject() {
         per_page: 10
     });
 
-    const fetchData = (paramsObj: any = { ...params.value }) => {
+    const fetchData = (subject_area_id: string, paramsObj: any = { ...params.value }) => {
         loading.value = true;
-        let url = `${POPULAR_SUBJECT}?${new URLSearchParams(paramsObj).toString()}`;
+        let url = `${TOP_UNIVERSITIES.replace(':subject_area_id', subject_area_id)}?${new URLSearchParams(paramsObj).toString()}`
 
-        get<IPaginatedUniversityResponse<ISubject>>(url)
+        get<IPaginatedUniversityResponse<IUniversity>>(url)
             .then((res) => {
                 data.value.push(...(res?.rows?.data || []));
                 params.value.page = res?.rows?.current_page!;

@@ -29,7 +29,7 @@ const playVideo = () => {
 
 <template>
   <div
-    class="flex-shrink-0 w-60 rounded-lg overflow-hidden relative group"
+    class="flex-shrink-0 shadow overflow-hidden relative group"
   >
     <!-- Thumbnail -->
     <img
@@ -51,12 +51,12 @@ const playVideo = () => {
       class="absolute inset-0 flex items-center justify-center bg-black/50 transition group"
     >
       <button
-        class="bg-secondary rounded-full p-4 group-hover:scale-125 transition duration-300"
+        class="btn btn-ghost !text-red-500 p-4 group-hover:scale-125 transition duration-300"
         @click="playVideo"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-white"
+          class="h-12 w-12"
           fill="currentColor"
           viewBox="0 0 24 24"
         >

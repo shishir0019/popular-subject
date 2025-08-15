@@ -10,3 +10,40 @@ body {
     font-weight: 500;
     background-color: #f8faff;
 }
+
+.container {
+    @apply max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-0;
+}
+
+.btn {
+    @apply py-3 px-6 text-sm inline-flex items-center justify-center font-semibold transition duration-100 cursor-pointer shadow;
+}
+
+.btn-sm {
+  @apply py-2 px-4;
+}
+
+.btn-primary {
+    @apply text-white bg-gradient-to-bl to-primary from-orange-300 hover:from-primary disabled:bg-orange-300 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+    @apply text-white bg-gradient-to-bl to-secondary from-lime-300 hover:from-secondary disabled:bg-lime-300 disabled:cursor-not-allowed;
+}
+
+.btn-ghost {
+    @apply bg-gray-700 text-white hover:bg-gray-900 disabled:bg-gray-400 disabled:text-gray-600 disabled:cursor-not-allowed;
+}
+
+.btn-primary-outline {
+    @apply border border-primary text-primary hover:bg-black hover:text-white;
+}
+.btn-primary-outline-active {
+    @apply border bg-primary text-white;
+}
+.btn-secondary-outline {
+  @apply border border-secondary text-secondary hover:bg-black hover:text-white;
+}
+.btn-secondary-outline-active {
+    @apply border bg-secondary text-white;
+}

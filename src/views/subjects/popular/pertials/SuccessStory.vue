@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import SuccessStoryBg from "../../../assets/blog-bg-1.png";
+import SuccessStoryBg from "../../../../assets/blog-bg-1.png";
 
-import SuccessStory1 from "../../../assets/success/1.png";
-import SuccessStory2 from "../../../assets/success/2.png";
-import SuccessStory3 from "../../../assets/success/3.png";
-import SuccessStory4 from "../../../assets/success/4.png";
-import SuccessStory5 from "../../../assets/success/5.png";
+import SuccessStory1 from "../../../../assets/success/1.png";
+import SuccessStory2 from "../../../../assets/success/2.png";
+import SuccessStory3 from "../../../../assets/success/3.png";
+import SuccessStory4 from "../../../../assets/success/4.png";
+import SuccessStory5 from "../../../../assets/success/5.png";
 import VideoItem from "./VideoItem.vue";
 import { reactive } from "vue";
 interface Video {
@@ -61,7 +61,7 @@ const playVideo = (video: Video) => {
     class="py-16"
     :style="{ backgroundImage: `url(&quot;${SuccessStoryBg}&quot;)` }"
   >
-    <div class="max-w-[1320px] mx-auto">
+    <div class="container mx-auto">
       <!-- Title -->
       <div class="mb-8">
         <h2 class="text-2xl md:text-4xl font-bold text-gray-900">
@@ -73,7 +73,7 @@ const playVideo = (video: Video) => {
       </div>
 
       <!-- Video Slider -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
         <VideoItem
           v-for="(video, index) in videosData"
           :key="index"
@@ -85,7 +85,7 @@ const playVideo = (video: Video) => {
     <div class="flex justify-center items-center my-16">
       <a
         href="#"
-        class="bg-primary text-white text-sm px-6 py-3 rounded-full font-semibold hover:bg-secondary transition duration-300"
+        class="btn btn-primary"
       >
         EXPLORE MORE
         <Icon icon="mdi:arrow-right" class="w-4 h-4 inline-block" />
