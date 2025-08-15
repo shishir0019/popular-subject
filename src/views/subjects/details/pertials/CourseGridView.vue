@@ -2,7 +2,7 @@
 import type { ICourse } from "../../../../types/subject";
 import { urlGenerator } from "../../../../utils/helper";
 
-const props = defineProps<{
+defineProps<{
   course: ICourse;
 }>();
 
